@@ -1,0 +1,16 @@
+# (a) List contents of dir1 and all descendants
+ls -R dir1
+
+# (b) List contents of dir3
+# 1. Alphabetical Order
+ls -l dir3 | sort
+# 2. Sorted on Time of modification, newest first
+ls -lt dir3
+# 3. Sorted on Size
+ls -lS dir3
+# 4. Reverse of above
+ls -lSr dir3
+# 5. Long listing of files Sorted on Size with smallest first
+ls -lhS dir3
+# 6. Display in human-readable form
+ls -lh --sort=size dir3
