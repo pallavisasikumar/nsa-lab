@@ -1,0 +1,5 @@
+# (a) Display filenames starting at column 50
+ls -l | cut -c50-
+
+# (b) Display user Id and user name from /etc/passwd
+cut -d: -f1,3 /etc/passwd
