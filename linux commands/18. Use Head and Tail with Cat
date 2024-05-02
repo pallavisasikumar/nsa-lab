@@ -1,0 +1,14 @@
+# (a) First 12 users
+head -n 12 /etc/passwd
+
+# (b) Last 7 users
+tail -n 7 /etc/passwd
+
+# (c) All but the first 3
+tail -n +4 /etc/passwd
+
+# (d) All but the last 5
+head -n -5 /etc/passwd
+
+# (e) Only the 9th
+head -n 9 /etc/passwd | tail -n 1
