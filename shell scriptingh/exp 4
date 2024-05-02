@@ -1,0 +1,14 @@
+echo "Enter the first number:"
+read n1
+echo "Enter the second number:"
+read n2
+echo "Enter the third number:"
+read n3
+largest=$n1
+if [ $n2 -gt $largest ]; then
+ largest=$n2
+fi
+if [ $n3 -gt $largest ]; then
+ largest=$n3
+fi
+echo "The largest number is: $largest"
