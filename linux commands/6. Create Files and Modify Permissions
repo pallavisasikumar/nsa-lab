@@ -1,0 +1,19 @@
+nano testfile2
+nano testfile3
+
+# Modify permissions of testfile2
+chmod o+r testfile2
+chmod u-w testfile2
+chmod g+x testfile2
+chmod u+w,go-r testfile2
+chmod a+rw testfile2
+
+# Modify permissions of testfile3 using numeric mode
+chmod 666 testfile3
+chmod 711 testfile3
+
+# Set permissions of testfile2 same as testfile3
+chmod --reference=testfile3 testfile2
+
+# Set permissions of dir1 and its descendants to 664
+chmod -R 664 dir1
