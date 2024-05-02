@@ -1,0 +1,9 @@
+echo "Enter a Decimal number:"
+read decimal
+binary=""
+remainder=0
+while [ $decimal -gt 0 ]; do
+ remainder=$((decimal % 2))
+ binary="$remainder$binary"
+ decimal=$((decimal / 2))
+done
