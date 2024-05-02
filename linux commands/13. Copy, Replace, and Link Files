@@ -1,0 +1,20 @@
+# (a) Copy file1 to newfile, replace if exists
+cp -f file1 newfile
+
+# (b) Copy file1 to newfile, do not replace if exists
+cp -n file1 newfile
+
+# (c) Copy file1 to newfile, ask for consent
+cp -i file1 newfile
+
+# (d) Copy only if contents are older
+cp -u file1 newfile
+
+# (e) Copy even if newfile is read-only
+cp -f file1 newfile --reply=yes
+
+# (f) Create a link
+ln file1 newfile
+
+# (g) Copy entire directory tree to dir5
+cp -r dir1 dir5
