@@ -1,0 +1,16 @@
+factorial() {
+ local n=$1
+ local result=1
+ if [ $n -eq 0 ]; then
+ echo 1
+ else
+ for ((i = 1; i <= n; i++)); do
+ result=$((result * i))
+ done
+ echo $result
+ fi
+}
+echo "Enter a number:"
+read num
+fact=$(factorial $num)
+echo "Factorial of $num is: $fact"
