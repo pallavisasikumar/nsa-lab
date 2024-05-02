@@ -1,0 +1,35 @@
+while true; do
+ echo "Menu:"
+ echo "1. Find month by number"
+ echo "2. Exit"
+ echo "Enter your choice: "
+ read choice
+ case $choice in
+ 1)
+ echo "Enter the number of the month (1-12):"
+ read month_number
+ case $month_number in
+ 1) echo "January";;
+ 2) echo "February";;
+ 3) echo "March";;
+ 4) echo "April";;
+ 5) echo "May";;
+6) echo "June";;
+ 7) echo "July";;
+ 8) echo "August";;
+ 9) echo "September";;
+ 10) echo "October";;
+ 11) echo "November";;
+ 12) echo "December";;
+ *) echo "Invalid month number! Please enter a number between 1 and 12.";;
+ esac
+ ;;
+ 2)
+ echo "Exiting..."
+ exit 0
+ ;;
+ *)
+ echo "Invalid choice! Please enter 1 or 2."
+ ;;
+ esac
+done
