@@ -1,0 +1,8 @@
+# (a) Create file1
+echo "Hello," > file1
+
+# (b) Create file2
+echo ", Greetings!!" > file2
+
+# (c) Concatenate files using cat
+cat file1 - file2
