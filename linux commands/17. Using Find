@@ -1,0 +1,11 @@
+# (a) Count files starting with 'a'
+find . -type f -name 'a*' | wc -l
+
+# (b) Delete .c files in parent directory
+find .. -type f -name '*.c' -delete
+
+# (c) Copy files starting with 'a' to dir2
+find . -type f -name 'a*' -exec cp {} dir2 \;
+
+# (d) Display files modified in the last 30 minutes
+find . -mmin -30
