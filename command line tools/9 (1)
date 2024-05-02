@@ -1,0 +1,3 @@
+ifquery -l
+ ifup -V
+
