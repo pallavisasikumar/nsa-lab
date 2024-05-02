@@ -1,0 +1,17 @@
+# (a) Read integers X and Y, display sum, difference, product, quotient, remainder
+echo "Enter X and Y:"
+read X Y
+echo "Sum: $(expr $X + $Y)"
+echo "Difference: $(expr $X - $Y)"
+echo "Product: $(expr $X \* $Y)"
+echo "Quotient: $(expr $X / $Y)"
+echo "Remainder: $(expr $X % $Y)"
+
+# (b) Read string S, position p, length l, display substring
+echo "Enter string S:"
+read S
+echo "Enter position p:"
+read p
+echo "Enter length l:"
+read l
+echo "Substring: $(expr substr "$S" $p $l)"
