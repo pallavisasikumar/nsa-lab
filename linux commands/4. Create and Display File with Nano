@@ -1,0 +1,8 @@
+# Create testfile1 using nano
+nano testfile1
+
+# Display the file starting with the first 10 lines
+head testfile1
+
+# Display the file starting with the 10th line and scroll up using less
+tail -n +10 testfile1 | less
