@@ -1,0 +1,17 @@
+# (a) Move files in dir5 to dir6
+mv dir5/* dir6/
+
+# (b) Rename newfile to oldfile
+mv newfile oldfile
+
+# (c) Move file1 to dir6 with the name file3
+mv file1 dir6/file3
+
+# (d) Delete files starting with a vowel
+rm [aeiouAEIOU]*
+
+# (e) Delete files with name at least 3 characters
+find . -type f -name '??*' -delete
+
+# (f) Delete hidden files and folders
+find . -name ".*" -delete
