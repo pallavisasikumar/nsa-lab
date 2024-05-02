@@ -1,0 +1,26 @@
+# (a) Display lines containing the string 'abc'
+grep 'abc' file.txt
+
+# (b) Display lines not containing 'abc'
+grep -v 'abc' file.txt
+
+# (c) List .c files containing printf
+grep -rl 'printf' *.c
+
+# (d) List .c files not containing printf
+grep -rL 'printf' *.c
+
+# (e) Display number of #include statements
+grep -c '#include' *.c
+
+# (f) Display line numbers of printf
+grep -n 'printf' file.c
+
+# (g) List files containing printf in directory tree
+grep -rl 'printf' dir1/
+
+# (h) Display context of printf
+grep -C 5 'printf' file.c
+
+# (i) List directories with ls -l starting with 'd'
+ls -l | grep '^d'
