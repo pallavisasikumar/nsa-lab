@@ -1,0 +1,2 @@
+ls > lsoutput
+ls -l >> lsoutput
